@@ -1,11 +1,11 @@
 {
-  "name": "markup-basic-template",
+  "name": "belberry-test",
   "version": "1.0.0",
-  "description": "Basic template for HTML/CSS/JS pages markup.",
+  "description": "Тестовое задание для компании Belberry",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/owlrik/markup-basic-template.git"
+    "url": "git+https://github.com/owlrik/belberry-test.git"
   },
   "scripts": {
     "start": "cross-env NODE_ENV=development gulp start",

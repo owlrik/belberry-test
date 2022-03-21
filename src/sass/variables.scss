@@ -5,21 +5,23 @@ $color-default-black:             #000000;
 $color-default-white:             #ffffff;
 $color-transparent:               rgba(255, 255, 255, 0);
 
-$color-main:                      #000000;
-$color-accent:                    #0000ff;
+$color-main:                      #035063;
+$color-main--dark:                #014751;
+$color-accent:                    #ff7512;
 
 $color-text:                      $color-main;
 $color-text--invert:              $color-default-white;
 
-$color-body:                      $color-default-white;
+$color-body:                      #e5e5e5;
 
 // Typography
 //---------------------------------
 
-$font-family--placeholder:        "", "Arial", sans-serif;
+$font-family--proxima-nova:       "Proxima Nova", "Arial", sans-serif;
+$font-family--museo-sans:         "Museo Sans", "Arial", sans-serif;
 
-$font-size:                       16px;
-$line-height:                     1.2;
+$font-size:                       1rem;
+$line-height:                     1.25;
 
 // Viewports
 //---------------------------------
