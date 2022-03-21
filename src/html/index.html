@@ -12,7 +12,361 @@
   <link rel="manifest" href="site.webmanifest">
 </head>
 <body>
-  <h1>Медгород</h1>
+  <header class="page-header">
+    <div class="container">
+      <div class="page_header__top">
+        <div class="page-header__logo-wrap">
+          <a class="logo page-header__logo" href="/">
+            <img src="img/content/logo.svg" width="344" height="76" alt="Медгород">
+          </a>
+        </div>
+
+        <div class="address page-header__address">
+          <p class="address__city">
+            Москва
+          </p>
+
+          <p class="address__nearby">
+            <a class="address__link" href="#">
+              <span>7&nbsp;клиник</span> рядом с Вами!
+            </a>
+          </p>
+        </div>
+
+        <div class="appointment page-header__appointment">
+          <p class="appointment__title">Запись на&nbsp;приём</p>
+
+          <div class="appointment__phone">
+            <ul class="socials appointment__socials">
+              <li class="socials__item">
+                <a class="socials__link" href="viber://#">
+                  <span class="sr-only">Записывайтесь в Viber</span>
+                  <svg width="32" height="32" aria-hidden="true">
+                    <use xlink:href="img/sprite/sprite.svg#viber"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="https://t.me/#">
+                  <span class="sr-only">Записывайтесь в Telegram</span>
+                  <svg width="32" height="32" aria-hidden="true">
+                    <use xlink:href="img/sprite/sprite.svg#telegram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="https://wa.me/#">
+                  <span class="sr-only">Записывайтесь в Whatsapp</span>
+                  <svg width="32" height="32" aria-hidden="true">
+                    <use xlink:href="img/sprite/sprite.svg#whatsapp"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+
+            <a class="appointment__number" href="tel:84955404803">8 (495) 540-48-03</a>
+          </div>
+
+          <a href="mailto:medgorod@bk.ru">medgorod@bk.ru</a>
+        </div>
+      </div>
+
+      <div class="page-header__bottom">
+        <nav class="main-nav page-header__main-nav">
+          <a class="main-nav__home-link" href="/">
+            <span class="sr-only">На главную</span>
+            <svg width="28" height="24" aria-hidden="true">
+              <use xlink:href="img/sprite/sprite.svg#home"></use>
+            </svg>
+          </a>
+
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <span>
+                <svg width="24" height="16" aria-hidden="true">
+                  <use xlink:href="img/sprite/sprite.svg#menu"></use>
+                </svg>
+              </span>
+              <span>
+                Услуги
+              </span>
+
+              <ul class="main-nav__list main-nav--lvl2">
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link">COVID-19</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link">Гастроэнтерология</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link">Гинекология</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link">Дерматология</a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link">Кардиология</a>
+                </li>
+              </ul>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">О клинике</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Врачи</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Цены</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Отзывы</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--active" href="#">Акции</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Клиники</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="search page-header__search">
+          <a class="search__toggle" href="#">
+            <span class="sr-only">Начать поиск</span>
+            <svg width="22" height="22" aria-hidden="true">
+              <use xlink:href="img/sprite/sprite.svg#search"></use>
+            </svg>
+          </a>
+
+          <div class="search__form-wrap">
+            <form class="form form-search" action="#">
+              <input type="text" name="search-query" placeholder="Поиск по сайту">
+              <button type="submit">Поиск</button>
+            </form>
+
+            <button class="btn-image" type="button">
+              <span class="sr-only">Завершить поиск</span>
+            </button>
+          </div>
+        </div>
+
+        <a class="btn page-header__callback" href="#">
+          Обратный звонок
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <h1 class="sr-only">Медгород &mdash; сеть клиник экспертной медицины</h1>
+
+    <div class="breadcrumbs">
+      <div class="container">
+        <a class="breadcrumbs__back" href="#">
+          <span class="sr-only">Назад</span>
+          <svg width="7" height="12" aria-hidden="true">
+            <use xlink:href="img/sprite/sprite.svg#back"></use>
+          </svg>
+        </a>
+
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="/">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link">Акции</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="section promo">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">Акции и&nbsp;спецпредложения</h2>
+          <p class="section__lead">
+            В данном разделе представлены акции от сети клиник &laquo;Медгород&raquo;,
+            представленная здесь информация полностью актуальна.
+          </p>
+        </header>
+
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <article class="promo-card">
+                <div class="promo-card__info">
+                  <p class="promo-card__tag">
+                    Акция
+                  </p>
+
+                  <h3 class="promo-card__title" id="promo-title-1">
+                    Он-лайн консультация любого врача-терапевта
+                  </h3>
+
+                  <p class="promo-card__discount">
+                    <span>1700&nbsp;руб.</span>
+                    <span>-30%</span>
+                  </p>
+
+                  <p class="promo-card__price">
+                    1&nbsp;1190&nbsp;руб.
+                  </p>
+
+                  <p class="promo-card__dueto">
+                    Акция действует до&nbsp;30.09.2021&nbsp;г.
+                  </p>
+
+                  <div class="promo-card__btn-wrap">
+                    <a class="btn promo-card__btn" href="#">Записаться</a>
+                    <a class="btn promo-card__btn" href="#">Подробнее</a>
+                  </div>
+                </div>
+
+                <div class="promo-card__img">
+                  <img src="img/content/promo-1.png" alt="" aria-labelledby="promo-title-1">
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="promo-card">
+                <div class="promo-card__info">
+                  <p class="promo-card__tag">
+                    Акция
+                  </p>
+
+                  <h3 class="promo-card__title" id="promo-title-2">
+                    Расшифровка анализов у&nbsp;любого доктора
+                  </h3>
+
+                  <p class="promo-card__discount">
+                    <span>800&nbsp;руб.</span>
+                    <span>-30%</span>
+                  </p>
+
+                  <p class="promo-card__price">
+                    500&nbsp;руб.
+                  </p>
+
+                  <p class="promo-card__dueto">
+                    Акция действует до&nbsp;30.09.2021&nbsp;г.
+                  </p>
+
+                  <div class="promo-card__btn-wrap">
+                    <a class="btn promo-card__btn" href="#">Записаться</a>
+                    <a class="btn promo-card__btn" href="#">Подробнее</a>
+                  </div>
+                </div>
+
+                <div class="promo-card__img">
+                  <img src="img/content/promo-2.png" alt="" aria-labelledby="promo-title-2">
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="promo-card">
+                <div class="promo-card__info">
+                  <p class="promo-card__tag">
+                    Акция
+                  </p>
+
+                  <h3 class="promo-card__title" id="promo-title-3">
+                    ЭКГ&nbsp;+&nbsp;ЭХО-КГ
+                  </h3>
+
+                  <p class="promo-card__discount">
+                    <span>4&nbsp;150&nbsp;руб.</span>
+                    <span>-30%</span>
+                  </p>
+
+                  <p class="promo-card__price">
+                    2&nbsp;900&nbsp;руб.
+                  </p>
+
+                  <p class="promo-card__dueto">
+                    Акция действует до&nbsp;30.09.2021&nbsp;г.
+                  </p>
+
+                  <div class="promo-card__btn-wrap">
+                    <a class="btn promo-card__btn" href="#">Записаться</a>
+                    <a class="btn promo-card__btn" href="#">Подробнее</a>
+                  </div>
+                </div>
+
+                <div class="promo-card__img">
+                  <img src="img/content/promo-3.png" alt="" aria-labelledby="promo-title-3">
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="promo-card">
+                <div class="promo-card__info">
+                  <p class="promo-card__tag">
+                    Акция
+                  </p>
+
+                  <h3 class="promo-card__title" id="promo-title-4">
+                    УЗИ <span class="promo-card__subtitle">-50%&nbsp;на&nbsp;вторую локацию</span>
+                  </h3>
+
+                  <p class="promo-card__dueto">
+                    Акция действует до&nbsp;31.06.2021&nbsp;г.
+                  </p>
+
+                  <div class="promo-card__btn-wrap">
+                    <a class="btn promo-card__btn" href="#">Записаться</a>
+                    <a class="btn promo-card__btn" href="#">Подробнее</a>
+                  </div>
+                </div>
+
+                <div class="promo-card__img">
+                  <img src="img/content/promo-4.png" alt="" aria-labelledby="promo-title-4">
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-slide">
+              <article class="promo-card">
+                <div class="promo-card__info">
+                  <p class="promo-card__tag">
+                    Акция
+                  </p>
+
+                  <h3 class="promo-card__title" id="promo-title-5">
+                    Прием любого врача <span class="promo-card__subtitle">+&nbsp;УЗИ&nbsp;+&nbsp;ЭКГ</span>
+                  </h3>
+
+                  <p class="promo-card__price">
+                    4&nbsp;200&nbsp;руб.
+                  </p>
+
+                  <p class="promo-card__dueto">
+                    Акция действует до&nbsp;30.09.2021&nbsp;г.
+                  </p>
+
+                  <div class="promo-card__btn-wrap">
+                    <a class="btn promo-card__btn" href="#">Записаться</a>
+                    <a class="btn promo-card__btn" href="#">Подробнее</a>
+                  </div>
+                </div>
+
+                <div class="promo-card__img">
+                  <img src="img/content/promo-5.png" alt="" aria-labelledby="promo-title-5">
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
