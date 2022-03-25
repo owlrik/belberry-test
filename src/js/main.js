@@ -1,5 +1,6 @@
 import  {initPromoSlider} from "./modules/init-promo-slider";
 import {toggleMenuItemDropdown, toggleSearchBar, headerScroll} from "./modules/header";
+import {forEachPolyfill} from './utils/ie-foreach';
 // import {polyfillObjectFit} from './utils/polyfill-object-fit';
 
 // ---------------------------------
@@ -12,6 +13,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // только если ie11
   // https://github.com/fregante/object-fit-images
   // polyfillObjectFit();
+  forEachPolyfill();
 
   // Modules
   // ---------------------------------
