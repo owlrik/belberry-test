@@ -1,0 +1,18 @@
+.promo {
+  background: url("../img/bg/promo.png") right 65px top 0 / auto no-repeat;
+}
+
+.promo .swiper-container {
+  overflow: visible;
+  background:
+    linear-gradient(91.12deg, rgba(255, 255, 255, 0.75) 30.07%, rgba(255, 255, 255, 0) 41.08%),
+    url("../img/bg/promo-card.jpg") center top / cover no-repeat;
+  border-radius: 20px;
+}
+
+.promo__slider {
+  width: 100%;
+  padding-top: 56px;
+  overflow: hidden;
+  border-radius: 20px;
+}

@@ -1,0 +1,123 @@
+.promo-card {
+  position: relative;
+  min-height: 500px;
+  padding: 64px 68px 68px;
+}
+
+.promo-card .btn {
+  min-width: 200px;
+}
+
+.promo-card__info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 1;
+  width: 50%;
+  max-width: 50%;
+}
+
+.promo-card__tag {
+  margin: 0 0 15px;
+  padding: 4px 20px 5px;
+  color: $color-text--invert;
+  text-align: center;
+  background-color: $color-main;
+  border-radius: 3.36px;
+}
+
+.promo-card__title {
+  width: 100%;  // IE11 fix
+  margin: 0 0 24px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.17;
+}
+
+.promo-card__subtitle {
+  display: block;
+  font-size: 36px;
+  line-height: 1.55;
+}
+
+.promo-card__discount {
+  display: flex;
+  align-items: center;
+  margin: 0 0 4px;
+}
+
+.promo-card__discount-price {
+  margin-right: 56px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #333333;
+  // not IE11
+  //text-decoration-line: line-through;
+}
+
+.promo-card__discount-percent {
+  position: relative;
+  padding: 6px 14px;
+  font-weight: 700;
+  font-size: 14px;
+  color: $color-text--invert;
+  background-color: $color-accent;
+  border-radius: 5px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: calc(100% - 5px);
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: $color-accent;
+    transform: translateY(-50%) rotate(45deg);
+    transform-origin: 50% 50%;
+  }
+}
+
+.promo-card__price {
+  margin: 0;
+  font-weight: 800;
+  font-size: 34px;
+}
+
+.promo-card__price span {
+  font-size: 46px;
+}
+
+.promo-card__dueto {
+  margin: 0;
+  font-size: 14px;
+  color: #333333;
+  opacity: 0.75;
+}
+
+.promo-card__btn-wrap {
+  display: flex;
+  margin-top: 27px;
+}
+
+.promo-card__btn + .promo-card__btn {
+  margin-left: 20px;
+}
+
+.promo-card__img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: block;
+  width: 58%;
+  height: calc(100% + 56px);
+}
+
+.promo-card__img img {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+}

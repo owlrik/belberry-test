@@ -2,7 +2,7 @@
   position: relative;
   display: inline-block;
   max-width: 100%;
-  padding: 18px 40px;
+  padding: 12px 40px;
   font-weight: 700;
   font-size: 18px;
   font-family: $font-family--proxima-nova;
@@ -20,5 +20,9 @@
   &--accent {
     background-color: $color-accent;
     box-shadow: 0 4px 16px rgba($color-accent, 0.29);
+  }
+
+  &--op-70 {
+    background-color: rgba($color-main, 0.7);
   }
 }

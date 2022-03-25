@@ -52,13 +52,16 @@
     "webpack-stream": "^7.0.0"
   },
   "browserslist": [
-    "last 2 versions",
+    "last 3 versions",
     "not dead",
-    "not IE <= 11"
+    "IE 11"
   ],
   "husky": {
     "hooks": {
       "pre-commit": "npm test"
     }
+  },
+  "dependencies": {
+    "swiper": "^4.5.1"
   }
 }
