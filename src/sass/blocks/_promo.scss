@@ -1,5 +1,16 @@
-.promo {
-  background: url("../img/bg/promo.png") right 65px top 0 / auto no-repeat;
+.promo .section__header {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: 66px;
+    display: block;
+    width: 367px;
+    height: 340px;
+    background: url("../img/bg/promo.png") center top / 100% no-repeat;
+  }
 }
 
 .promo .swiper-container {
