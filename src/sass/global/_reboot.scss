@@ -5,6 +5,7 @@
 }
 
 html {
+  font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
   box-sizing: border-box;
 }
 
@@ -20,7 +21,7 @@ body {
   min-width: 320px;
   font-style: normal;
   font-weight: 400;
-  font-size: $font-size;
+  //font-size: $font-size;
   line-height: $line-height;
   font-family: $font-family--proxima-nova;
   color: $color-text;
@@ -31,6 +32,7 @@ body {
 
 a {
   color: $color-text;
+  text-decoration: none;
 }
 
 img,

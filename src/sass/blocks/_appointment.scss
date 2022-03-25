@@ -1,0 +1,27 @@
+.appointment {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.appointment__title {
+  margin: 0;
+  opacity: 0.6;
+}
+
+.appointment__phone {
+  display: flex;
+  align-items: center;
+}
+
+.appointment__number {
+  margin-left: 14px;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.appointment__mail {
+  font-weight: 600;
+  font-size: 14px;
+  color: $color-main--dark;
+}

@@ -1,0 +1,62 @@
+.page-header {
+  box-shadow: 0 8px 40px rgba($color-default-black, 0.05);
+}
+
+.page-header .btn {
+  padding: 12px 32px;
+  font-size: 16px;
+}
+
+.page-header__top {
+  display: flex;
+  align-items: center;
+  height: 105px;
+}
+
+.page-header__logo-wrap {
+  flex: 0 0 344px;
+}
+
+.page-header__logo {
+  width: 344px;
+  height: 76px;
+}
+
+.page-header__address {
+  position: relative;
+  margin-left: 43px;
+  padding-left: 32px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 1px;
+    height: 50px;
+    background-color: rgba($color-border, 0.8);
+    transform: translateY(-50%);
+  }
+}
+
+.page-header__appointment {
+  margin-left: auto;
+}
+
+.page-header__bottom {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 18px;
+  border-top: 1px solid rgba($color-border, 0.8);
+}
+
+.page-header__search {
+  margin-left: auto;
+}
+
+.page-header__callback {
+  margin-left: 30px;
+}

@@ -1,0 +1,36 @@
+.address {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  color: $color-main--dark;
+}
+
+.address__city {
+  position: relative;
+  margin: 0 0 px-to-rem(5);
+  padding-left: px-to-rem(20);
+  font-size: 20px;
+}
+
+.address__city svg {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  width: 14px;
+  height: 18px;
+  transform: translateY(-50%);
+}
+
+.address__nearby {
+  margin: 0;
+  font-size: 14px;
+}
+
+.address__link {
+  color: #878787;
+}
+
+.address__link span {
+  color: $color-main--dark;
+}

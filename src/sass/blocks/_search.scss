@@ -1,0 +1,30 @@
+.search--show .search__form-wrap {
+  display: flex;
+}
+
+.search__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+.search__link svg {
+  width: 22px;
+  height: 22px;
+  opacity: 0.16;
+}
+
+.search__form-wrap {
+  position: absolute;
+  top: 1px;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+  align-items: center;
+  height: calc(100% - 1px);
+  background-color: $color-default-white;
+  box-shadow: 10px 0 0 0 $color-default-white;
+}

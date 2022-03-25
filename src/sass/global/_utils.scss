@@ -30,3 +30,11 @@
 .wrapper main {
   flex-grow: 1;
 }
+
+.container {
+  width: 100%;
+  max-width: 1342px;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}

@@ -5,6 +5,7 @@ $color-default-black:             #000000;
 $color-default-white:             #ffffff;
 $color-transparent:               rgba(255, 255, 255, 0);
 
+$color-main--light:               #11839e;
 $color-main:                      #035063;
 $color-main--dark:                #014751;
 $color-accent:                    #ff7512;
@@ -12,7 +13,8 @@ $color-accent:                    #ff7512;
 $color-text:                      $color-main;
 $color-text--invert:              $color-default-white;
 
-$color-body:                      #e5e5e5;
+$color-body:                      $color-default-white;
+$color-border:                    #e9e9e9;
 
 // Typography
 //---------------------------------

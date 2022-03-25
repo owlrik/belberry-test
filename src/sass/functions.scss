@@ -1,0 +1,11 @@
+@use 'sass:math';
+
+@function px-to-rem($pixels, $base: 16) {
+  $result: math.div($pixels, $base) + rem;
+  @return $result;
+}
+
+@function px-to-em($pixels, $base: 16) {
+  $result: math.div($pixels, $base) + em;
+  @return $result;
+}
