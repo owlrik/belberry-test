@@ -33,6 +33,11 @@ body {
 a {
   color: $color-text;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
 }
 
 img,

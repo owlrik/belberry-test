@@ -23,30 +23,3 @@
 .form-search__submit {
   margin-left: 15px;
 }
-
-.form-search__close {
-  display: block;
-  width: 40px;
-  height: 40px;
-  margin-left: 20px;
-
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 22px;
-    height: 2px;
-    background-color: $color-main;
-    transform-origin: 50% 50%;
-  }
-
-  &::before {
-    transform: translateX(-50%) rotate3d(0, 0, 1, 45deg);
-  }
-
-  &::after {
-    transform: translateX(-50%) rotate3d(0, 0, 1, -45deg);
-  }
-}

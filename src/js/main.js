@@ -1,4 +1,5 @@
 import  {initPromoSlider} from "./modules/init-promo-slider";
+import {toggleMenuItemDropdown, toggleSearchBar, headerScroll} from "./modules/header";
 // import {polyfillObjectFit} from './utils/polyfill-object-fit';
 
 // ---------------------------------
@@ -14,6 +15,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Modules
   // ---------------------------------
+  // initSubmenu();
+  toggleMenuItemDropdown();
+  toggleSearchBar();
+  headerScroll();
   initPromoSlider();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
