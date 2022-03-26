@@ -15,8 +15,8 @@
 
 .socials__link {
   display: block;
-  width: 32px;
-  height: 32px;
+  width: px-to-rem(32);
+  height: px-to-rem(32);
 }
 
 .socials__link svg {

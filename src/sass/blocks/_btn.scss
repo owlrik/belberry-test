@@ -2,9 +2,9 @@
   position: relative;
   display: inline-block;
   max-width: 100%;
-  padding: 12px 40px;
+  padding: px-to-rem(12) px-to-rem(40);
   font-weight: 700;
-  font-size: 18px;
+  font-size: px-to-rem(18);
   font-family: $font-family--proxima-nova;
   line-height: 1.5;
   color: $color-text--invert;
@@ -12,14 +12,14 @@
   text-decoration: none;
   background-color: $color-main;
   border: 0;
-  border-radius: 38px;
+  border-radius: px-to-rem(38);
   cursor: pointer;
   user-select: none;
   touch-action: manipulation;
 
   &--accent {
     background-color: $color-accent;
-    box-shadow: 0 4px 16px rgba($color-accent, 0.29);
+    box-shadow: 0 px-to-rem(4) px-to-rem(16) rgba($color-accent, 0.29);
   }
 
   &--op-70 {

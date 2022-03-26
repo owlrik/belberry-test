@@ -9,7 +9,7 @@
   position: relative;
   margin: 0 0 px-to-rem(5);
   padding-left: px-to-rem(20);
-  font-size: 20px;
+  font-size: px-to-rem(20);
 }
 
 .address__city svg {
@@ -17,14 +17,14 @@
   top: 50%;
   left: 0;
   display: block;
-  width: 14px;
-  height: 18px;
+  width: px-to-rem(14);
+  height: px-to-rem(18);
   transform: translateY(-50%);
 }
 
 .address__nearby {
   margin: 0;
-  font-size: 14px;
+  font-size: px-to-rem(14);
 }
 
 .address__link {

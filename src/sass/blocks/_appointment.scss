@@ -15,13 +15,13 @@
 }
 
 .appointment__number {
-  margin-left: 14px;
+  margin-left: px-to-rem(14);
   font-weight: 700;
-  font-size: 24px;
+  font-size: px-to-rem(24);
 }
 
 .appointment__mail {
   font-weight: 600;
-  font-size: 14px;
+  font-size: px-to-rem(14);
   color: $color-main--dark;
 }

@@ -7,19 +7,19 @@
 .form-search__input {
   flex-grow: 1;
   display: inline-block;
-  height: 48px;
-  padding: 5px 10px;
-  font-size: 16px;
+  height: px-to-rem(48);
+  padding: px-to-rem(5) px-to-rem(10);
+  font-size: px-to-rem(16);
   line-height: 1;
   font-family: $font-family--proxima-nova;
   color: $color-text;
   text-align: left;
   background-color: $color-default-white;
   border: 1px solid $color-main;
-  border-radius: 38px;
+  border-radius: px-to-rem(38);
   outline: 0;
 }
 
 .form-search__submit {
-  margin-left: 15px;
+  margin-left: px-to-rem(15);
 }

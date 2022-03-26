@@ -5,7 +5,6 @@
 }
 
 html {
-  font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
   box-sizing: border-box;
 }
 
@@ -13,6 +12,8 @@ html,
 body {
   margin: 0;
   padding: 0;
+  font-size: 1rem;
+  font-size: calc(14px + (16 - 14) * ((100vw - 1024px) / (1920 - 1024)));
 }
 
 body {
