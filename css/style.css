@@ -1638,9 +1638,10 @@ button,
     position: absolute;
     top: 100%;
     left: 0;
+    display: flex;
+    flex-wrap: nowrap;
     flex-direction: column;
     align-items: flex-start;
-    display: flex;
     width: 100%;
     max-height: calc(100vh - 5rem);
     padding: 0 1.875rem 1.875rem;
