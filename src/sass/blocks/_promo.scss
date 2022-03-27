@@ -4,12 +4,24 @@
   &::after {
     content: "";
     position: absolute;
-    top: -20px;
-    right: 66px;
+    top: px-to-rem(-20);
+    right: px-to-rem(66);
     display: block;
-    width: 367px;
-    height: 340px;
+    width: px-to-rem(367);
+    height: px-to-rem(340);
     background: url("../img/bg/promo.png") center top / 100% no-repeat;
+
+    @media screen and (max-width: $screen--1024 - 1) {
+      top: px-to-rem(-20, $font-size--small);
+      right: px-to-rem(66, $font-size--small);
+      width: px-to-rem(367, $font-size--small);
+      height: px-to-rem(340, $font-size--small);
+    }
+
+    @media screen and (max-width: $screen--480 - 1) {
+      width: px-to-rem(150, $font-size--small);
+      height: px-to-rem(139, $font-size--small);
+    }
   }
 }
 
@@ -18,12 +30,16 @@
   background:
     linear-gradient(91.12deg, rgba(255, 255, 255, 0.75) 30.07%, rgba(255, 255, 255, 0) 41.08%),
     url("../img/bg/promo-card.jpg") center top / cover no-repeat;
-  border-radius: 20px;
+  border-radius: px-to-rem(20);
 }
 
 .promo__slider {
   width: 100%;
-  padding-top: 56px;
+  padding-top: px-to-rem(56);
   overflow: hidden;
-  border-radius: 20px;
+  border-radius: px-to-rem(20);
+
+  @media screen and (max-width: $screen--1024 - 1) {
+    padding-top: 0;
+  }
 }
