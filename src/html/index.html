@@ -16,9 +16,16 @@
     <header class="page-header">
       <div class="container">
         <div class="page-header__top">
+          <button class="page-header__toggle" type="button" aria-pressed="false">
+            <span></span>
+          </button>
+
           <div class="page-header__logo-wrap">
             <a class="logo page-header__logo" href="/">
-              <img src="img/content/logo.svg" width="344" height="76" alt="Медгород">
+              <picture>
+                <source media="(max-width: 560px)" type="image/svg+xml" srcset="img/content/logo--mobile.svg">
+                <img src="img/content/logo.svg" width="344" height="76" alt="Медгород">
+              </picture>
             </a>
           </div>
 

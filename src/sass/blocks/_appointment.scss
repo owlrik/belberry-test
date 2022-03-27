@@ -7,6 +7,10 @@
 .appointment__title {
   margin: 0;
   opacity: 0.6;
+
+  @media screen and (max-width: $screen--1024 - 1) {
+    display: none;
+  }
 }
 
 .appointment__phone {
@@ -18,10 +22,18 @@
   margin-left: px-to-rem(14);
   font-weight: 700;
   font-size: px-to-rem(24);
+
+  @media screen and (max-width: $screen--1024 - 1) {
+    display: none;
+  }
 }
 
 .appointment__mail {
   font-weight: 600;
   font-size: px-to-rem(14);
   color: $color-main--dark;
+
+  @media screen and (max-width: $screen--1024 - 1) {
+    display: none;
+  }
 }

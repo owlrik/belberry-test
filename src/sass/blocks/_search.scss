@@ -1,3 +1,9 @@
+.search {
+  @media screen and (max-width: $screen--1024 - 1) {
+    display: none;
+  }
+}
+
 .search--show .search__form-wrap {
   display: flex;
 }

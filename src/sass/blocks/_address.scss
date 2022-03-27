@@ -3,6 +3,10 @@
   flex-direction: column;
   font-weight: 700;
   color: $color-main--dark;
+
+  @media screen and (max-width: $screen--1024 - 1) {
+    display: none;
+  }
 }
 
 .address__city {

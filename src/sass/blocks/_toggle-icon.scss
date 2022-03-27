@@ -3,6 +3,13 @@
   display: block;
   width: px-to-rem(25);
   height: px-to-rem(20);
+
+  @media screen and (max-width: $screen--1024 - 1) {
+    width: px-to-rem(12, $font-size--small);
+    height: px-to-rem(12, $font-size--small);
+    border-right: px-to-rem(2, $font-size--small) solid $color-main;
+    border-bottom: px-to-rem(2, $font-size--small) solid $color-main;
+  }
 }
 
 .toggle-icon__top,
@@ -20,6 +27,10 @@
   height: px-to-rem(2);
   background-color: $color-main;
   border-radius: px-to-rem(2);
+
+  @media screen and (max-width: $screen--1024 - 1) {
+    display: none;
+  }
 }
 
 .toggle-icon__middle {
@@ -30,6 +41,10 @@
   width: 100%;
   height: px-to-rem(2);
   transform: translateY(-50%);
+
+  @media screen and (max-width: $screen--1024 - 1) {
+    display: none;
+  }
 
   &::before {
     content: "";
@@ -66,4 +81,8 @@
   height: px-to-rem(2);
   background-color: $color-main;
   border-radius: px-to-rem(2);
+
+  @media screen and (max-width: $screen--1024 - 1) {
+    display: none;
+  }
 }

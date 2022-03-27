@@ -1,5 +1,5 @@
 import  {initPromoSlider} from "./modules/init-promo-slider";
-import {toggleMenuItemDropdown, toggleSearchBar, headerScroll} from "./modules/header";
+import {toggleMenuItemDropdown, toggleSearchBar, headerScroll, toggleMenu} from "./modules/header";
 import {forEachPolyfill} from './utils/ie-foreach';
 // import {polyfillObjectFit} from './utils/polyfill-object-fit';
 
@@ -18,6 +18,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
   // ---------------------------------
   // initSubmenu();
+  toggleMenu();
   toggleMenuItemDropdown();
   toggleSearchBar();
   headerScroll();

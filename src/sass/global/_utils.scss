@@ -22,6 +22,10 @@
   min-height: 100vh;
   overflow-x: hidden;
   padding-top: px-to-rem(182);
+
+  @media screen and (max-width: $screen--1024 - 1) {
+    padding-top: px-to-rem(70, $font-size--small);
+  }
 }
 
 .wrapper .page-header,
