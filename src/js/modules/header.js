@@ -9,6 +9,16 @@ const headerToggle = header.querySelector('.page-header__toggle');
 
 const breakpointMd = window.matchMedia('(max-width: 1023px)');
 
+const getHeaderHeight = () => {
+  const HEADER_TOP_HEIGHT = 105;
+
+  if (header && !breakpointMd.matches) {
+    return (headerTop.offsetHeight) ? headerTop.offsetHeight : HEADER_TOP_HEIGHT;
+  } else {
+    return 0;
+  }
+}
+
 const openMenu = () => {
   headerToggle.ariaPressed = 'true';
   document.body.classList.add('no-scroll');
@@ -94,10 +104,10 @@ const toggleSearchBar = () => {
 };
 
 const fixHeader = () => {
-  let headerTopHeight = headerTop.clientHeight;
+  let headerHeight = getHeaderHeight();
 
   if (header && headerTop) {
-    if (window.pageYOffset >= headerTopHeight) {
+    if (window.pageYOffset >= headerHeight) {
       header.classList.add('page-header--fixed');
     } else {
       header.classList.remove('page-header--fixed');
@@ -114,30 +124,5 @@ const headerScroll = () => {
     fixHeader();
   });
 };
-
-// const toggleHeaderFix = () => {
-//   const checkBreakpoint = () => {
-//     if (!breakpointMd.matches) {
-//       window.addEventListener('scroll', fixHeader);
-//       window.addEventListener('load', fixHeader);
-//     } else {
-//       window.removeEventListener('scroll', fixHeader);
-//       window.removeEventListener('load', fixHeader);
-//     }
-//   }
-//
-//   checkBreakpoint();
-//
-//   try {
-//     breakpointMd.addEventListener('change', checkBreakpoint);
-//   } catch (evt1) {
-//     try {
-//       // Safari < 15
-//       breakpointMd.addListener(checkBreakpoint);
-//     } catch (evt2) {
-//       console.error(evt2);
-//     }
-//   }
-// };
 
 export {toggleMenuItemDropdown, toggleSearchBar, headerScroll, toggleMenu};

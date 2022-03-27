@@ -62,6 +62,9 @@
     }
   },
   "dependencies": {
+    "object-fit-images": "^3.2.4",
+    "picturefill": "^3.0.3",
+    "svg4everybody": "^2.1.9",
     "swiper": "^4.5.1"
   }
 }
