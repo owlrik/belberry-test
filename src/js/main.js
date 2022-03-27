@@ -1,7 +1,9 @@
 import  {initPromoSlider} from "./modules/init-promo-slider";
 import {toggleMenuItemDropdown, toggleSearchBar, headerScroll, toggleMenu} from "./modules/header";
 import {forEachPolyfill} from './utils/ie-foreach';
-// import {polyfillObjectFit} from './utils/polyfill-object-fit';
+import svg4everybody from 'svg4everybody';
+import picturefill from 'picturefill';
+import polyfillObjectFit from 'object-fit-images';
 
 // ---------------------------------
 
@@ -14,6 +16,9 @@ window.addEventListener('DOMContentLoaded', () => {
   // https://github.com/fregante/object-fit-images
   // polyfillObjectFit();
   forEachPolyfill();
+  svg4everybody();
+  picturefill();
+  polyfillObjectFit();
 
   // Modules
   // ---------------------------------
